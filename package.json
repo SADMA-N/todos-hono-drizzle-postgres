@@ -5,7 +5,8 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
-    "db:seed": "bun run ./scripts/seed.script.ts"
+    "db:seed": "bun run ./scripts/seed.script.ts",
+    "db:reset": "bun run ./scripts/reset.script.ts"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.2",
@@ -13,7 +14,7 @@
     "pg": "^8.20.0"
   },
   "devDependencies": {
-    "@types/bun": "latest",
+    "@types/bun": "^1.3.13",
     "@types/pg": "^8.20.0",
     "drizzle-kit": "^0.31.10",
     "drizzle-seed": "^0.3.1"
